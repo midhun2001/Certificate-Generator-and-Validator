@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="d-grid gap-4 col-5 mx-auto my-5">
+        
+        <a href="{% url 'list_view' %}" class="text-white text-decoration-none custom-home-link">Generate Certificate</a>
+        
+        <a href="{% url 'verify_certificate' %}" class="text-white text-decoration-none custom-home-link">Verify Certificate</a>
+    </div>
+{% endblock %}

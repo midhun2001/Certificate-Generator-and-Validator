@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container text-center mt-5">
+    <div class="row">
+        <div class="col">
+            <h1 class="mb-4">{{ teacher.teacher_name }}</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. Aliquet nec ullamcorper sit amet risus nullam. Est velit 
+                egestas dui id ornare arcu. Quis varius quam quisque id diam. Ut diam quam nulla porttitor 
+                massa. In pellentesque massa placerat duis ultricies lacus. Viverra mauris in aliquam sem 
+                fringilla ut morbi tincidunt augue. Nunc sed velit dignissim sodales ut. Quis eleifend quam 
+                adipiscing vitae proin. Etiam sit amet nisl purus. At elementum eu facilisis sed odio morbi 
+                quis commodo. Ac turpis egestas integer eget. Vitae et leo duis ut. Eget arcu dictum varius duis.
+            </p>
+        </div>
+        <div class="col">
+            <h3 class="mb-3">List of Students</h3>
+            <div class="custom-list">
+                {% for student in students %}
+                <a href="{% url 'generate_certificate' teacher_id=teacher.id student_id=student.id %}" class="custom-item">
+                    {{ student.student_name }}
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container text-center mt-5">
+    <div class="certificate">
+        <h1 class="certificate-title">Certificate of Achievement</h1>
+        <p class="certificate-text">
+            This is to certify that {{ certificate.student }} has successfully completed a course with {{ certificate.teacher }}. 
+            The course covered various subjects and demonstrated exceptional dedication and commitment.
+        </p>
+        <div class="certificate-details">
+            <p class="certificate-date">Issues Date: {{ certificate.issue_date }}</p><br><br>
+            <p class="certificate-token">Token : {{ certificate.token }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

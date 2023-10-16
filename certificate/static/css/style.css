@@ -1,0 +1,74 @@
+/* Home */
+.custom-home-link {
+    width: 300px;
+    background-color: #6c757d;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-home-link:hover {
+    background-color: #5c636a;
+}
+
+
+
+/* List of students and teacher */
+.custom-list {
+    margin: auto;
+    width: 400px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.custom-item {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    text-decoration: none; 
+    color: #333;
+}
+
+.custom-item:hover {
+    background-color: #ccc; /* Darker gray background on hover */
+}        
+
+/* Certificate */
+.certificate {
+    background-color: #fff6a7;
+    border: 2px solid #333;
+    padding: 20px;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.certificate-text {
+    font-family: 'YourCustomFont', sans-serif;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.certificate-details {
+    margin-top: 30px;
+}
+
+.certificate-token{
+    font-size: 9px;
+}
+
+.certificate-date {
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: bold;
+}
