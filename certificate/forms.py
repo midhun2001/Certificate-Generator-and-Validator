@@ -6,7 +6,7 @@ class TokenForm(forms.Form):
         label="Token",
         max_length=1000,
         widget=forms.TextInput(attrs={
-            'class': 'form-control',  # Add the 'form-control' class for Bootstrap styling
-            'placeholder': 'Enter token here...',  # Add a placeholder text
+            'class': 'form-control',
+            'placeholder': 'Enter token here...',
         })
     )
